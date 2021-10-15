@@ -1,0 +1,135 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 95%;
+    width: 95% ;
+    font-family: 'Poppins', sans-serif;
+   
+}
+@media (max-width:760px){
+    body{
+        height: 99%;
+        width:100%;    }
+ }
+.body-container{
+    margin: 2em ;
+    padding: 4.5rem ;
+    height: 100%;
+    width: 100%;
+    background-image: url("/images/bg-desktop.svg");
+    background-color: hsl(257, 40%, 49%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+        /* left: 50%;
+        top: 50%;
+        transform: translate( -50% , -50% );
+        -webkit-transform: translate( -50% , -50% );
+        -moz-transform: translate( -50% , -50% );
+        -ms-transform: translate( -50% , -50% );
+        -o-transform: translate( -50% , -50% ); */
+}
+ @media (max-width:760px){
+    .body-container{
+        margin:0;
+        max-width: 100%;
+        flex-direction: column;
+    }
+ }
+.logo{
+    position: absolute;
+    width: 5rem;
+    height: 2rem;
+    top: -9rem;
+    left: 5rem;
+    padding: 1rem;
+}
+.logo img{
+    width: 9rem;
+}
+.body-container img{
+    height: 20rem;
+    
+}
+.right {
+    height: 100%;
+    width: 50%;
+    padding: 0 2.5rem;
+    color: white;
+} 
+@media (max-width:760px){
+    .right{
+        max-width: 758px;
+        width: 90% ;
+        padding: 0 1rem;
+        text-align: center;
+
+    }
+}
+h1{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+p{
+    margin-bottom: 2rem;
+
+}
+button{
+    width: 15rem;
+    border: .1rem solid hsl(257, 40%, 49%);
+    padding: .5rem 2.5rem;
+    color:hsl(257, 40%, 49%);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+.icons{
+    position: absolute;
+    margin:0;
+    right: 0;
+    bottom: 0;
+    padding: 1.5rem 2.5rem ;
+    background-color: transparent;
+    
+}
+
+.icons i {
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    justify-content: center;
+    margin: 0 .5rem;
+    padding: .5rem;
+    border:white solid .1rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    
+}
+.icons i:hover , button:hover{
+   
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+}
+@media (max-width:760px){
+    .icons{
+        height: 5rem;
+        padding-top: 2rem;
+        right: calc(50% - 7.5rem);
+
+    }
+}
