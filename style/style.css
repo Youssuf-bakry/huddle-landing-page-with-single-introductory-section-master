@@ -51,6 +51,7 @@ body{
     top: -9rem;
     left: 5rem;
     padding: 1rem;
+    z-index: 3;
 }
 .logo img{
     width: 9rem;
